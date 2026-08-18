@@ -5,11 +5,13 @@
 </p>
 
 <p align="center">
-  <a href="https://awesome.re/"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Physical-AI-Software/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Physical-AI-Software?style=flat-square&logo=github&color=blueviolet" alt="GitHub stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Physical-AI-Software/network"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Physical-AI-Software?style=flat-square&logo=github&color=blueviolet" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Physical-AI-Software/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Physical-AI-Software?style=flat-square&color=blueviolet" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Physical-AI-Software/issues"><img src="https://img.shields.io/badge/PRs-Welcome-blueviolet?style=flat-square&logo=github" alt="PRs welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ## 🌍 Physical AI Software Ecosystem
