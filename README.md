@@ -187,541 +187,407 @@ Commercial platforms are grouped separately from the open-source ecosystem. Ente
 
 > **Important:** many “platform companies” in Physical AI are not pure SaaS businesses. They sell a combination of software, robot hardware, deployment services and long-term support. They are included because their software layer is strategically important to Physical AI.
 
-# 🐙 Open-Source Software
-
-This is the core of the list. The projects below are grouped by the software layer they provide rather than by company.
-
 ## Core Robotics Middleware
 
-### 1. [ROS 2](https://github.com/ros2)
-**🟢 Open Source — Apache 2.0 components**
+### 1. [ROS 2](https://github.com/ros2) [![GitHub Stars](https://img.shields.io/github/stars/ros2/ros2?style=social&color=white)](https://github.com/ros2/ros2/stargazers)
 
 The dominant open robotics middleware ecosystem. Provides DDS-based communication, lifecycle management, tools, message definitions, transforms and a huge hardware/software ecosystem.
 
 **Physical AI role:** the integration layer between models, sensors, planners and robot hardware.
 
-### 2. [ros2_control](https://github.com/ros-controls/ros2_control)
-**🟢 Open Source — hardware/control framework**
+### 2. [eProsima Fast DDS](https://github.com/eProsima/Fast-DDS) [![GitHub Stars](https://img.shields.io/github/stars/eProsima/Fast-DDS?style=social&color=white)](https://github.com/eProsima/Fast-DDS/stargazers)
+
+DDS middleware used heavily within ROS 2 deployments.
+
+### 3. [Cyclone DDS](https://github.com/eclipse-cyclonedds/cyclonedds) [![GitHub Stars](https://img.shields.io/github/stars/eclipse-cyclonedds/cyclonedds?style=social&color=white)](https://github.com/eclipse-cyclonedds/cyclonedds/stargazers)
+
+High-performance DDS implementation suitable for ROS 2 communication.
+
+### 4. [ros2_control](https://github.com/ros-controls/ros2_control) [![GitHub Stars](https://img.shields.io/github/stars/ros-controls/ros2_control?style=social&color=white)](https://github.com/ros-controls/ros2_control/stargazers)
 
 Standardizes hardware interfaces and real-time robot controllers in ROS 2. A crucial bridge from learned policies or planners to motors and actuators.
 
-### 3. [ros2_controllers](https://github.com/ros-controls/ros2_controllers)
-**🟢 Open Source — Apache 2.0**
+### 5. [ros2_controllers](https://github.com/ros-controls/ros2_controllers) [![GitHub Stars](https://img.shields.io/github/stars/ros-controls/ros2_controllers?style=social&color=white)](https://github.com/ros-controls/ros2_controllers/stargazers)
 
 Reusable joint, trajectory, differential-drive and related controllers designed to work with ros2_control.
 
-### 4. [Open-RMF](https://github.com/open-rmf/rmf)
-**🟢 Open Source**
+### 6. [YARP](https://github.com/robotology/yarp) [![GitHub Stars](https://img.shields.io/github/stars/robotology/yarp?style=social&color=white)](https://github.com/robotology/yarp/stargazers)
+
+Long-running middleware for distributed humanoid and research robotics, especially useful in multi-process and multi-sensor systems.
+
+### 7. [Open-RMF](https://github.com/open-rmf/rmf) [![GitHub Stars](https://img.shields.io/github/stars/open-rmf/rmf?style=social&color=white)](https://github.com/open-rmf/rmf/stargazers)
 
 Open Robotics middleware for coordinating fleets of heterogeneous robots in buildings and other shared environments.
 
 **Best for:** hospitals, warehouses, campuses and multi-vendor robot fleets.
 
-### 5. [YARP](https://github.com/robotology/yarp)
-**🟢 Open Source — robot middleware**
-
-Long-running middleware for distributed humanoid and research robotics, especially useful in multi-process and multi-sensor systems.
-
-### 6. [Orocos](https://www.orocos.org/)
-**🟢 Open Source**
-
-Real-time robotics control framework used in research and industrial systems.
-
-### 7. [micro-ROS](https://github.com/micro-ROS/micro-ROS.github.io)
-**🟢 Open Source**
+### 8. [micro-ROS](https://github.com/micro-ROS/micro-ROS.github.io) [![GitHub Stars](https://img.shields.io/github/stars/micro-ROS/micro-ROS.github.io?style=social&color=white)](https://github.com/micro-ROS/micro-ROS.github.io/stargazers)
 
 ROS 2 on microcontrollers and resource-constrained embedded systems.
 
-### 8. [Cyclone DDS](https://github.com/eclipse-cyclonedds/cyclonedds)
-**🟢 Open Source**
-
-High-performance DDS implementation suitable for ROS 2 communication.
-
-### 9. [eProsima Fast DDS](https://github.com/eProsima/Fast-DDS)
-**🟢 Open Source**
-
-DDS middleware used heavily within ROS 2 deployments.
-
 ## Robot Control / Kinematics / Planning
 
-### 10. [MoveIt 2](https://github.com/moveit/moveit2)
-**🟢 Open Source**
-
-The leading open manipulation framework for ROS 2: motion planning, collision checking, kinematics, trajectory generation and manipulation pipelines.
-
-### 11. [MoveIt Task Constructor](https://github.com/moveit/moveit_task_constructor)
-**🟢 Open Source**
-
-Task-level manipulation planning with composable planning stages.
-
-### 12. [Navigation2 (Nav2)](https://github.com/ros-navigation/navigation2)
-**🟢 Open Source**
+### 1. [Navigation2 (Nav2)](https://github.com/ros-navigation/navigation2) [![GitHub Stars](https://img.shields.io/github/stars/ros-navigation/navigation2?style=social&color=white)](https://github.com/ros-navigation/navigation2/stargazers)
 
 The canonical ROS 2 navigation stack for mobile robots, including planners, controllers, behavior trees, localization and recovery.
 
-### 13. [Pinocchio](https://github.com/stack-of-tasks/pinocchio)
-**🟢 Open Source — BSD-style**
-
-Fast rigid-body algorithms for kinematics, dynamics, analytical derivatives and model-based control.
-
-### 14. [Drake](https://github.com/RobotLocomotion/drake)
-**🟢 Open Source**
+### 2. [Drake](https://github.com/RobotLocomotion/drake) [![GitHub Stars](https://img.shields.io/github/stars/RobotLocomotion/drake?style=social&color=white)](https://github.com/RobotLocomotion/drake/stargazers)
 
 Robotics toolbox from MIT's RobotLocomotion group emphasizing rigorous multibody dynamics, optimization, planning and control.
 
-### 15. [Crocoddyl](https://github.com/loco-3d/crocoddyl)
-**🟢 Open Source**
+### 3. [Pinocchio](https://github.com/stack-of-tasks/pinocchio) [![GitHub Stars](https://img.shields.io/github/stars/stack-of-tasks/pinocchio?style=social&color=white)](https://github.com/stack-of-tasks/pinocchio/stargazers)
 
-Optimal-control library for robotics, especially whole-body and legged motion.
+Fast rigid-body algorithms for kinematics, dynamics, analytical derivatives and model-based control.
 
-### 16. [Tesseract Robotics](https://github.com/tesseract-robotics)
-**🟢 Open Source**
-
-Planning, collision checking and industrial manipulation components with strong process-industry/manufacturing relevance.
-
-### 17. [OMPL](https://github.com/ompl/ompl)
-**🟢 Open Source**
-
-Open Motion Planning Library with probabilistic planning algorithms widely used in robotics.
-
-### 18. [TrajOpt](https://github.com/tesseract-robotics/trajopt)
-**🟢 Open Source**
-
-Optimization-based motion planning for constrained manipulation.
-
-### 19. [TopiCO](https://github.com/ControlSystems/ControlSystems.jl)
-**🟢 Open Source ecosystem**
-
-Useful numerical/control components for robotics research; often paired with modern optimal-control workflows.
-
-### 20. [ACADOS](https://github.com/acados/acados)
-**🟢 Open Source**
-
-Embedded optimal-control framework frequently used for model-predictive control on robots and autonomous systems.
-
-### 21. [CasADi](https://github.com/casadi/casadi)
-**🟢 Open Source**
+### 4. [CasADi](https://github.com/casadi/casadi) [![GitHub Stars](https://img.shields.io/github/stars/casadi/casadi?style=social&color=white)](https://github.com/casadi/casadi/stargazers)
 
 Symbolic/numeric optimization framework used to build trajectory optimization and MPC systems.
 
+### 5. [OMPL](https://github.com/ompl/ompl) [![GitHub Stars](https://img.shields.io/github/stars/ompl/ompl?style=social&color=white)](https://github.com/ompl/ompl/stargazers)
+
+Open Motion Planning Library with probabilistic planning algorithms widely used in robotics.
+
+### 6. [MoveIt 2](https://github.com/moveit/moveit2) [![GitHub Stars](https://img.shields.io/github/stars/moveit/moveit2?style=social&color=white)](https://github.com/moveit/moveit2/stargazers)
+
+The leading open manipulation framework for ROS 2: motion planning, collision checking, kinematics, trajectory generation and manipulation pipelines.
+
+### 7. [ACADOS](https://github.com/acados/acados) [![GitHub Stars](https://img.shields.io/github/stars/acados/acados?style=social&color=white)](https://github.com/acados/acados/stargazers)
+
+Embedded optimal-control framework frequently used for model-predictive control on robots and autonomous systems.
+
+### 8. [Crocoddyl](https://github.com/loco-3d/crocoddyl) [![GitHub Stars](https://img.shields.io/github/stars/loco-3d/crocoddyl?style=social&color=white)](https://github.com/loco-3d/crocoddyl/stargazers)
+
+Optimal-control library for robotics, especially whole-body and legged motion.
+
+### 9. [TopiCO](https://github.com/ControlSystems/ControlSystems.jl) [![GitHub Stars](https://img.shields.io/github/stars/ControlSystems/ControlSystems.jl?style=social&color=white)](https://github.com/ControlSystems/ControlSystems.jl/stargazers)
+
+Useful numerical/control components for robotics research; often paired with modern optimal-control workflows.
+
+### 10. [TrajOpt](https://github.com/tesseract-robotics/trajopt) [![GitHub Stars](https://img.shields.io/github/stars/tesseract-robotics/trajopt?style=social&color=white)](https://github.com/tesseract-robotics/trajopt/stargazers)
+
+Optimization-based motion planning for constrained manipulation.
+
+### 11. [MoveIt Task Constructor](https://github.com/moveit/moveit_task_constructor) [![GitHub Stars](https://img.shields.io/github/stars/moveit/moveit_task_constructor?style=social&color=white)](https://github.com/moveit/moveit_task_constructor/stargazers)
+
+Task-level manipulation planning with composable planning stages.
+
+### 12. [Tesseract Robotics](https://github.com/tesseract-robotics) [![GitHub Stars](https://img.shields.io/github/stars/tesseract-robotics/tesseract-robotics?style=social&color=white)](https://github.com/tesseract-robotics/tesseract-robotics/stargazers)
+
+Planning, collision checking and industrial manipulation components with strong process-industry/manufacturing relevance.
+
 ## Navigation / SLAM / Mapping
 
-### 22. [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox)
-**🟢 Open Source**
-
-A major ROS 2 SLAM package for 2D mapping and localization.
-
-### 23. [RTAB-Map](https://github.com/introlab/rtabmap)
-**🟢 Open Source**
-
-RGB-D, stereo and LiDAR SLAM with graph optimization and 3D mapping.
-
-### 24. [Cartographer](https://github.com/cartographer-project/cartographer)
-**🟢 Open Source**
-
-Google-origin 2D/3D SLAM system; still a useful reference and research stack.
-
-### 25. [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM)
-**🟢 Open Source / Research**
-
-LiDAR-inertial odometry and mapping, widely used as a research baseline for outdoor robots and autonomous systems.
-
-### 26. [FAST-LIO](https://github.com/hku-mars/FAST_LIO)
-**🟢 Open Source / Research**
-
-High-performance LiDAR-inertial odometry for real-time robotic mapping.
-
-### 27. [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
-**🟢 Open Source / Research**
-
-Visual-inertial and multi-sensor state estimation.
-
-### 28. [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)
-**🟢 Research code**
+### 1. [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3) [![GitHub Stars](https://img.shields.io/github/stars/UZ-SLAMLab/ORB_SLAM3?style=social&color=white)](https://github.com/UZ-SLAMLab/ORB_SLAM3/stargazers)
 
 Visual, visual-inertial and multi-map SLAM supporting monocular, stereo and RGB-D setups.
 
+### 2. [Cartographer](https://github.com/cartographer-project/cartographer) [![GitHub Stars](https://img.shields.io/github/stars/cartographer-project/cartographer?style=social&color=white)](https://github.com/cartographer-project/cartographer/stargazers)
+
+Google-origin 2D/3D SLAM system; still a useful reference and research stack.
+
+### 3. [FAST-LIO](https://github.com/hku-mars/FAST_LIO) [![GitHub Stars](https://img.shields.io/github/stars/hku-mars/FAST_LIO?style=social&color=white)](https://github.com/hku-mars/FAST_LIO/stargazers)
+
+High-performance LiDAR-inertial odometry for real-time robotic mapping.
+
+### 4. [LIO-SAM](https://github.com/TixiaoShan/LIO-SAM) [![GitHub Stars](https://img.shields.io/github/stars/TixiaoShan/LIO-SAM?style=social&color=white)](https://github.com/TixiaoShan/LIO-SAM/stargazers)
+
+LiDAR-inertial odometry and mapping, widely used as a research baseline for outdoor robots and autonomous systems.
+
+### 5. [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion) [![GitHub Stars](https://img.shields.io/github/stars/HKUST-Aerial-Robotics/VINS-Fusion?style=social&color=white)](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion/stargazers)
+
+Visual-inertial and multi-sensor state estimation.
+
+### 6. [RTAB-Map](https://github.com/introlab/rtabmap) [![GitHub Stars](https://img.shields.io/github/stars/introlab/rtabmap?style=social&color=white)](https://github.com/introlab/rtabmap/stargazers)
+
+RGB-D, stereo and LiDAR SLAM with graph optimization and 3D mapping.
+
+### 7. [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox) [![GitHub Stars](https://img.shields.io/github/stars/SteveMacenski/slam_toolbox?style=social&color=white)](https://github.com/SteveMacenski/slam_toolbox/stargazers)
+
+A major ROS 2 SLAM package for 2D mapping and localization.
+
 ## Simulation & Physics
 
-### 29. [Gazebo](https://github.com/gazebosim/gz-sim)
-**🟢 Open Source**
+### 1. [PyBullet](https://github.com/bulletphysics/bullet3) [![GitHub Stars](https://img.shields.io/github/stars/bulletphysics/bullet3?style=social&color=white)](https://github.com/bulletphysics/bullet3/stargazers)
+
+Widely used Python-accessible rigid-body physics environment for robotics and reinforcement learning.
+
+### 2. [MuJoCo](https://github.com/google-deepmind/mujoco) [![GitHub Stars](https://img.shields.io/github/stars/google-deepmind/mujoco?style=social&color=white)](https://github.com/google-deepmind/mujoco/stargazers)
+
+Fast physics engine originally developed for robotics research and now open sourced by Google DeepMind.
+
+### 3. [Isaac Lab](https://github.com/isaac-sim/IsaacLab) [![GitHub Stars](https://img.shields.io/github/stars/isaac-sim/IsaacLab?style=social&color=white)](https://github.com/isaac-sim/IsaacLab/stargazers)
+
+Open code around NVIDIA Isaac workflows for robot learning and massively parallel simulation. The software is highly visible in Physical AI training, but licensing should be checked component-by-component.
+
+### 4. [Newton Physics Engine](https://github.com/newton-physics/newton) [![GitHub Stars](https://img.shields.io/github/stars/newton-physics/newton?style=social&color=white)](https://github.com/newton-physics/newton/stargazers)
+
+Modern robotics-oriented physics engine effort involving NVIDIA, Google DeepMind and Disney Research, designed around high-performance simulation for robot learning.
+
+### 5. [Webots](https://github.com/cyberbotics/webots) [![GitHub Stars](https://img.shields.io/github/stars/cyberbotics/webots?style=social&color=white)](https://github.com/cyberbotics/webots/stargazers)
+
+Full robotics simulator supporting mobile robots, manipulators, sensors and ROS integration.
+
+### 6. [Drake](https://github.com/RobotLocomotion/drake) [![GitHub Stars](https://img.shields.io/github/stars/RobotLocomotion/drake?style=social&color=white)](https://github.com/RobotLocomotion/drake/stargazers)
+
+Also qualifies as a simulation/plant modeling framework, especially for optimization-heavy robotics.
+
+### 7. [ManiSkill](https://github.com/haosulab/ManiSkill) [![GitHub Stars](https://img.shields.io/github/stars/haosulab/ManiSkill?style=social&color=white)](https://github.com/haosulab/ManiSkill/stargazers)
+
+GPU-parallelized manipulation simulator and benchmark with thousands of simulated task instances; supports modern robot-learning pipelines.
+
+### 8. [Brax](https://github.com/google/brax) [![GitHub Stars](https://img.shields.io/github/stars/google/brax?style=social&color=white)](https://github.com/google/brax/stargazers)
+
+JAX-based differentiable physics / massively parallel simulation for reinforcement learning.
+
+### 9. [robosuite](https://github.com/ARISE-Initiative/robosuite) [![GitHub Stars](https://img.shields.io/github/stars/ARISE-Initiative/robosuite?style=social&color=white)](https://github.com/ARISE-Initiative/robosuite/stargazers)
+
+Modular simulation framework and benchmark for robot learning, manipulation and human demonstrations.
+
+### 10. [Gazebo](https://github.com/gazebosim/gz-sim) [![GitHub Stars](https://img.shields.io/github/stars/gazebosim/gz-sim?style=social&color=white)](https://github.com/gazebosim/gz-sim/stargazers)
 
 The canonical open robotics simulator in the ROS ecosystem. Modern Gazebo supersedes Gazebo Classic.
 
 **Physical AI role:** simulation, sensor modeling, robot testing and sim-to-real workflows.
 
-### 30. [MuJoCo](https://github.com/google-deepmind/mujoco)
-**🟢 Open Source — Apache 2.0**
-
-Fast physics engine originally developed for robotics research and now open sourced by Google DeepMind.
-
-### 31. [Brax](https://github.com/google/brax)
-**🟢 Open Source**
-
-JAX-based differentiable physics / massively parallel simulation for reinforcement learning.
-
-### 32. [SAPIEN](https://github.com/haosulab/SAPIEN)
-**🟢 Open Source**
+### 11. [SAPIEN](https://github.com/haosulab/SAPIEN) [![GitHub Stars](https://img.shields.io/github/stars/haosulab/SAPIEN?style=social&color=white)](https://github.com/haosulab/SAPIEN/stargazers)
 
 Physics-based simulator with strong support for manipulation and embodied AI.
 
-### 33. [ManiSkill](https://github.com/haosulab/ManiSkill)
-**🟢 Open Source**
-
-GPU-parallelized manipulation simulator and benchmark with thousands of simulated task instances; supports modern robot-learning pipelines.
-
-### 34. [robosuite](https://github.com/ARISE-Initiative/robosuite)
-**🟢 Open Source**
-
-Modular simulation framework and benchmark for robot learning, manipulation and human demonstrations.
-
-### 35. [PyBullet](https://github.com/bulletphysics/bullet3)
-**🟢 Open Source**
-
-Widely used Python-accessible rigid-body physics environment for robotics and reinforcement learning.
-
-### 36. [Webots](https://github.com/cyberbotics/webots)
-**🟢 Open Source**
-
-Full robotics simulator supporting mobile robots, manipulators, sensors and ROS integration.
-
-### 37. [CoppeliaSim](https://github.com/CoppeliaRobotics)
-**🟡 Source Available / mixed licensing**
+### 12. [CoppeliaSim](https://github.com/CoppeliaRobotics) [![GitHub Stars](https://img.shields.io/github/stars/CoppeliaRobotics/CoppeliaRobotics?style=social&color=white)](https://github.com/CoppeliaRobotics/CoppeliaRobotics/stargazers)
 
 Highly capable robot simulator used across industrial, academic and research applications; check the current license for the exact component before commercial redistribution.
 
-### 38. [Drake](https://github.com/RobotLocomotion/drake)
-**🟢 Open Source**
-
-Also qualifies as a simulation/plant modeling framework, especially for optimization-heavy robotics.
-
-### 39. [Isaac Lab](https://github.com/isaac-sim/IsaacLab)
-**🟡 Source Available / NVIDIA ecosystem**
-
-Open code around NVIDIA Isaac workflows for robot learning and massively parallel simulation. The software is highly visible in Physical AI training, but licensing should be checked component-by-component.
-
-### 40. [Newton Physics Engine](https://github.com/newton-physics/newton)
-**🟢 Open Source / collaborative project**
-
-Modern robotics-oriented physics engine effort involving NVIDIA, Google DeepMind and Disney Research, designed around high-performance simulation for robot learning.
-
 ## Robot Learning / Imitation / RL
 
-### 41. [Hugging Face LeRobot](https://github.com/huggingface/lerobot)
-**🟢 Open Source**
+### 1. [Hugging Face LeRobot](https://github.com/huggingface/lerobot) [![GitHub Stars](https://img.shields.io/github/stars/huggingface/lerobot?style=social&color=white)](https://github.com/huggingface/lerobot/stargazers)
 
 One of the most important open ecosystems for modern robot learning. Provides hardware integrations, datasets, policies, training code and deployment tooling.
 
 Includes support around approaches such as ACT, diffusion policies, SmolVLA and integration with newer VLA systems.
 
-### 42. [robomimic](https://github.com/ARISE-Initiative/robomimic)
-**🟢 Open Source**
-
-Benchmark and framework for learning from human demonstrations, especially behavioral cloning and offline imitation learning.
-
-### 43. [robosuite](https://github.com/ARISE-Initiative/robosuite)
-**🟢 Open Source**
-
-Simulation + demonstrations + manipulation benchmark; frequently paired with robomimic.
-
-### 44. [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)
-**🟢 Open Source**
+### 2. [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) [![GitHub Stars](https://img.shields.io/github/stars/DLR-RM/stable-baselines3?style=social&color=white)](https://github.com/DLR-RM/stable-baselines3/stargazers)
 
 PyTorch reinforcement-learning algorithms used broadly in robotics research and experimentation.
 
-### 45. [RL Games](https://github.com/Denys88/rl_games)
-**🟢 Open Source**
-
-High-performance RL algorithms frequently used with GPU-parallelized simulation.
-
-### 46. [TorchRL](https://github.com/pytorch/rl)
-**🟢 Open Source**
-
-PyTorch's modular reinforcement-learning framework with strong potential for robotics experimentation.
-
-### 47. [CleanRL](https://github.com/vwxyzjn/cleanrl)
-**🟢 Open Source**
+### 3. [CleanRL](https://github.com/vwxyzjn/cleanrl) [![GitHub Stars](https://img.shields.io/github/stars/vwxyzjn/cleanrl?style=social&color=white)](https://github.com/vwxyzjn/cleanrl/stargazers)
 
 Single-file RL implementations useful for research reproducibility and algorithmic benchmarking.
 
-### 48. [Diffusion Policy](https://github.com/real-stanford/diffusion_policy)
-**🟢 Open Source / Research**
+### 4. [Diffusion Policy](https://github.com/real-stanford/diffusion_policy) [![GitHub Stars](https://img.shields.io/github/stars/real-stanford/diffusion_policy?style=social&color=white)](https://github.com/real-stanford/diffusion_policy/stargazers)
 
 A landmark diffusion-policy implementation for visuomotor control and imitation learning.
 
-### 49. [ACT — ALOHA / Action Chunking with Transformers](https://github.com/tonyzhaozh/act)
-**🟢 Open Source / Research**
+### 5. [TorchRL](https://github.com/pytorch/rl) [![GitHub Stars](https://img.shields.io/github/stars/pytorch/rl?style=social&color=white)](https://github.com/pytorch/rl/stargazers)
+
+PyTorch's modular reinforcement-learning framework with strong potential for robotics experimentation.
+
+### 6. [robosuite](https://github.com/ARISE-Initiative/robosuite) [![GitHub Stars](https://img.shields.io/github/stars/ARISE-Initiative/robosuite?style=social&color=white)](https://github.com/ARISE-Initiative/robosuite/stargazers)
+
+Simulation + demonstrations + manipulation benchmark; frequently paired with robomimic.
+
+### 7. [ACT — ALOHA / Action Chunking with Transformers](https://github.com/tonyzhaozh/act) [![GitHub Stars](https://img.shields.io/github/stars/tonyzhaozh/act?style=social&color=white)](https://github.com/tonyzhaozh/act/stargazers)
 
 Action-chunking transformer policy that helped establish the modern imitation-learning workflow around low-cost teleoperated manipulation datasets.
 
-### 50. [Octo](https://github.com/octo-models/octo)
-**🟢 Open Source / Research model**
+### 8. [Octo](https://github.com/octo-models/octo) [![GitHub Stars](https://img.shields.io/github/stars/octo-models/octo?style=social&color=white)](https://github.com/octo-models/octo/stargazers)
 
 Generalist robot policy pretrained on a large multi-robot demonstration mixture, intended as a strong starting point for downstream adaptation.
 
-### 51. [DROID](https://github.com/droid-dataset/droid)
-**🔵 Research dataset / tooling**
+### 9. [robomimic](https://github.com/ARISE-Initiative/robomimic) [![GitHub Stars](https://img.shields.io/github/stars/ARISE-Initiative/robomimic?style=social&color=white)](https://github.com/ARISE-Initiative/robomimic/stargazers)
 
-Large-scale open robotics data project focused on real-world manipulation demonstrations; valuable for training and evaluation.
+Benchmark and framework for learning from human demonstrations, especially behavioral cloning and offline imitation learning.
 
-### 52. [DexMimicGen](https://github.com/NVlabs/dexmimicgen)
-**🔵 Research code / public dataset tooling**
+### 10. [RL Games](https://github.com/Denys88/rl_games) [![GitHub Stars](https://img.shields.io/github/stars/Denys88/rl_games?style=social&color=white)](https://github.com/Denys88/rl_games/stargazers)
 
-Automated generation of bimanual dexterous manipulation data in simulation, including environments and datasets designed for imitation learning.
+High-performance RL algorithms frequently used with GPU-parallelized simulation.
 
-### 53. [MimicGen](https://github.com/NVlabs/mimicgen)
-**🔵 Research code**
+### 11. [MimicGen](https://github.com/NVlabs/mimicgen) [![GitHub Stars](https://img.shields.io/github/stars/NVlabs/mimicgen?style=social&color=white)](https://github.com/NVlabs/mimicgen/stargazers)
 
 Framework for generating large robot demonstration datasets from a smaller set of human demonstrations using simulation.
 
+### 12. [DROID](https://github.com/droid-dataset/droid) [![GitHub Stars](https://img.shields.io/github/stars/droid-dataset/droid?style=social&color=white)](https://github.com/droid-dataset/droid/stargazers)
+
+Large-scale open robotics data project focused on real-world manipulation demonstrations; valuable for training and evaluation.
+
+### 13. [DexMimicGen](https://github.com/NVlabs/dexmimicgen) [![GitHub Stars](https://img.shields.io/github/stars/NVlabs/dexmimicgen?style=social&color=white)](https://github.com/NVlabs/dexmimicgen/stargazers)
+
+Automated generation of bimanual dexterous manipulation data in simulation, including environments and datasets designed for imitation learning.
+
 ## Vision-Language-Action & Open Robotics Models
 
-### 54. [OpenVLA](https://github.com/openvla/openvla)
-**🟡 Open Weights / research code**
-
-A 7B vision-language-action model trained on Open X-Embodiment data. One of the most important open VLA baselines for manipulation research.
-
-### 55. [Physical Intelligence openpi](https://github.com/Physical-Intelligence/openpi)
-**🟡 Open Weights / source available**
-
-Official open-source model repository for π₀, π₀-FAST and π₀.5. The project states that its base checkpoints are trained on more than 10,000 hours of robot data. Hardware and compute requirements can be substantial.
-
-### 56. [SmolVLA](https://github.com/huggingface/lerobot)
-**🟡 Open model within LeRobot**
+### 1. [SmolVLA](https://github.com/huggingface/lerobot) [![GitHub Stars](https://img.shields.io/github/stars/huggingface/lerobot?style=social&color=white)](https://github.com/huggingface/lerobot/stargazers)
 
 Compact VLA designed to make robot foundation-model experimentation more accessible on relatively constrained hardware.
 
-### 57. [RDT-1B](https://github.com/thu-ml/RDT-1B)
-**🔵 Research / open model code**
+### 2. [Physical Intelligence openpi](https://github.com/Physical-Intelligence/openpi) [![GitHub Stars](https://img.shields.io/github/stars/Physical-Intelligence/openpi?style=social&color=white)](https://github.com/Physical-Intelligence/openpi/stargazers)
 
-1B-parameter diffusion-transformer approach for language-conditioned bimanual manipulation.
+Official open-source model repository for π₀, π₀-FAST and π₀.5. The project states that its base checkpoints are trained on more than 10,000 hours of robot data. Hardware and compute requirements can be substantial.
 
-### 58. [OpenHelix](https://github.com/OpenHelix-Team/OpenHelix)
-**🟢 MIT licensed code**
-
-Open-source reimplementation and research stack for a dual-system VLA model for robotic manipulation.
-
-### 59. [OpenVLA-OFT](https://github.com/moojink/openvla-oft)
-**🔵 Research code**
-
-Fine-tuning / optimization techniques for deploying OpenVLA-style systems with stronger action prediction performance.
-
-### 60. [FAST](https://github.com/Physical-Intelligence/fast)
-**🟡 Research / source available**
-
-Action-tokenization approach associated with π₀-FAST; useful for understanding the data/sequence representation side of VLA inference.
-
-### 61. [GROOT-N](https://github.com/NVIDIA/Isaac-GR00T)
-**🟡 Open model / NVIDIA license**
+### 3. [GROOT-N](https://github.com/NVIDIA/Isaac-GR00T) [![GitHub Stars](https://img.shields.io/github/stars/NVIDIA/Isaac-GR00T?style=social&color=white)](https://github.com/NVIDIA/Isaac-GR00T/stargazers)
 
 NVIDIA's open general-purpose humanoid robot foundation-model ecosystem; connects perception/reasoning to robot actions and is integrated with Isaac tooling.
 
-### 62. [NVIDIA Cosmos](https://github.com/nvidia-cosmos)
-**🟡 Open models / source varies by component**
+### 4. [OpenVLA](https://github.com/openvla/openvla) [![GitHub Stars](https://img.shields.io/github/stars/openvla/openvla?style=social&color=white)](https://github.com/openvla/openvla/stargazers)
 
-World-foundation-model ecosystem for generating and reasoning about physical environments and synthetic training data.
+A 7B vision-language-action model trained on Open X-Embodiment data. One of the most important open VLA baselines for manipulation research.
 
-### 63. [Microsoft Physical AI Toolchain](https://github.com/microsoft/physical-ai-toolchain)
-**🟢 Open Source**
+### 5. [RDT-1B](https://github.com/thu-ml/RDT-1B) [![GitHub Stars](https://img.shields.io/github/stars/thu-ml/RDT-1B?style=social&color=white)](https://github.com/thu-ml/RDT-1B/stargazers)
+
+1B-parameter diffusion-transformer approach for language-conditioned bimanual manipulation.
+
+### 6. [OpenVLA-OFT](https://github.com/moojink/openvla-oft) [![GitHub Stars](https://img.shields.io/github/stars/moojink/openvla-oft?style=social&color=white)](https://github.com/moojink/openvla-oft/stargazers)
+
+Fine-tuning / optimization techniques for deploying OpenVLA-style systems with stronger action prediction performance.
+
+### 7. [FAST](https://github.com/Physical-Intelligence/fast) [![GitHub Stars](https://img.shields.io/github/stars/Physical-Intelligence/fast?style=social&color=white)](https://github.com/Physical-Intelligence/fast/stargazers)
+
+Action-tokenization approach associated with π₀-FAST; useful for understanding the data/sequence representation side of VLA inference.
+
+### 8. [OpenHelix](https://github.com/OpenHelix-Team/OpenHelix) [![GitHub Stars](https://img.shields.io/github/stars/OpenHelix-Team/OpenHelix?style=social&color=white)](https://github.com/OpenHelix-Team/OpenHelix/stargazers)
+
+Open-source reimplementation and research stack for a dual-system VLA model for robotic manipulation.
+
+### 9. [Microsoft Physical AI Toolchain](https://github.com/microsoft/physical-ai-toolchain) [![GitHub Stars](https://img.shields.io/github/stars/microsoft/physical-ai-toolchain?style=social&color=white)](https://github.com/microsoft/physical-ai-toolchain/stargazers)
 
 Open production-oriented framework combining cloud data infrastructure with NVIDIA physical-AI workflows for data curation, augmentation, evaluation and training.
 
+### 10. [NVIDIA Cosmos](https://github.com/nvidia-cosmos) [![GitHub Stars](https://img.shields.io/github/stars/nvidia-cosmos/nvidia-cosmos?style=social&color=white)](https://github.com/nvidia-cosmos/nvidia-cosmos/stargazers)
+
+World-foundation-model ecosystem for generating and reasoning about physical environments and synthetic training data.
+
 ## Embodied AI Benchmarks & Environments
 
-### 64. [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO)
-**🔵 Research benchmark / code**
-
-Benchmark suite for lifelong robot learning and language-conditioned manipulation.
-
-### 65. [CALVIN](https://github.com/mees/calvin)
-**🔵 Research benchmark / code**
-
-Long-horizon language-conditioned manipulation benchmark with an interactive environment.
-
-### 66. [RLBench](https://github.com/stepjam/RLBench)
-**🟢 Open Source / research benchmark**
-
-Large collection of manipulation tasks built for robot-learning research.
-
-### 67. [BEHAVIOR-1K](https://github.com/StanfordVL/BEHAVIOR-1K)
-**🔵 Research benchmark / open environment**
-
-Large embodied-AI benchmark centered on household activities and long-horizon interaction.
-
-### 68. [Habitat-Lab](https://github.com/facebookresearch/habitat-lab)
-**🟢 Open Source / research framework**
-
-Meta's embodied-AI research framework for navigation, rearrangement and instruction-following in 3D environments.
-
-### 69. [Habitat-Sim](https://github.com/facebookresearch/habitat-sim)
-**🟢 Open Source / research**
-
-High-performance 3D embodied-AI simulator.
-
-### 70. [AI2-THOR](https://github.com/allenai/ai2thor)
-**🟢 Open Source / research**
-
-Interactive 3D environment widely used for embodied AI and household-agent research.
-
-### 71. [MineDojo](https://github.com/MineDojo/MineDojo)
-**🔵 Research ecosystem**
-
-Large-scale embodied-agent environment and benchmark based on Minecraft, including multimodal datasets and task suites.
-
-### 72. [ManiSkill Benchmark](https://github.com/haosulab/ManiSkill)
-**🟢 Open Source**
+### 1. [ManiSkill Benchmark](https://github.com/haosulab/ManiSkill) [![GitHub Stars](https://img.shields.io/github/stars/haosulab/ManiSkill?style=social&color=white)](https://github.com/haosulab/ManiSkill/stargazers)
 
 GPU-parallel manipulation benchmark suitable for large-scale policy learning.
 
+### 2. [Habitat-Lab](https://github.com/facebookresearch/habitat-lab) [![GitHub Stars](https://img.shields.io/github/stars/facebookresearch/habitat-lab?style=social&color=white)](https://github.com/facebookresearch/habitat-lab/stargazers)
+
+Meta's embodied-AI research framework for navigation, rearrangement and instruction-following in 3D environments.
+
+### 3. [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) [![GitHub Stars](https://img.shields.io/github/stars/facebookresearch/habitat-sim?style=social&color=white)](https://github.com/facebookresearch/habitat-sim/stargazers)
+
+High-performance 3D embodied-AI simulator.
+
+### 4. [AI2-THOR](https://github.com/allenai/ai2thor) [![GitHub Stars](https://img.shields.io/github/stars/allenai/ai2thor?style=social&color=white)](https://github.com/allenai/ai2thor/stargazers)
+
+Interactive 3D environment widely used for embodied AI and household-agent research.
+
+### 5. [RLBench](https://github.com/stepjam/RLBench) [![GitHub Stars](https://img.shields.io/github/stars/stepjam/RLBench?style=social&color=white)](https://github.com/stepjam/RLBench/stargazers)
+
+Large collection of manipulation tasks built for robot-learning research.
+
+### 6. [MineDojo](https://github.com/MineDojo/MineDojo) [![GitHub Stars](https://img.shields.io/github/stars/MineDojo/MineDojo?style=social&color=white)](https://github.com/MineDojo/MineDojo/stargazers)
+
+Large-scale embodied-agent environment and benchmark based on Minecraft, including multimodal datasets and task suites.
+
+### 7. [LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) [![GitHub Stars](https://img.shields.io/github/stars/Lifelong-Robot-Learning/LIBERO?style=social&color=white)](https://github.com/Lifelong-Robot-Learning/LIBERO/stargazers)
+
+Benchmark suite for lifelong robot learning and language-conditioned manipulation.
+
+### 8. [CALVIN](https://github.com/mees/calvin) [![GitHub Stars](https://img.shields.io/github/stars/mees/calvin?style=social&color=white)](https://github.com/mees/calvin/stargazers)
+
+Long-horizon language-conditioned manipulation benchmark with an interactive environment.
+
+### 9. [BEHAVIOR-1K](https://github.com/StanfordVL/BEHAVIOR-1K) [![GitHub Stars](https://img.shields.io/github/stars/StanfordVL/BEHAVIOR-1K?style=social&color=white)](https://github.com/StanfordVL/BEHAVIOR-1K/stargazers)
+
+Large embodied-AI benchmark centered on household activities and long-horizon interaction.
+
 ## Datasets, Teleoperation & Data Infrastructure
 
-### 73. [LeRobotDataset](https://huggingface.co/docs/lerobot)
-**🟢 Open tooling / format**
-
-Standardized dataset format and tooling for robot trajectories, observations, actions and metadata.
-
-### 74. [Open X-Embodiment](https://robotics-transformer-x.github.io/)
-**🔵 Open research dataset ecosystem**
-
-Large cross-robot data initiative behind major generalist policy research.
-
-### 75. [ALOHA](https://github.com/MarkFang18/aloha)
-**🔵 Research hardware/software ecosystem**
+### 1. [ALOHA](https://github.com/MarkFang18/aloha) [![GitHub Stars](https://img.shields.io/github/stars/MarkFang18/aloha?style=social&color=white)](https://github.com/MarkFang18/aloha/stargazers)
 
 Low-cost bimanual teleoperation and manipulation platform that became a major foundation for imitation-learning research.
 
-### 76. [DROID](https://droid-dataset.github.io/)
-**🔵 Open research dataset**
-
-Real-world robot manipulation dataset designed for broad policy learning and transfer.
-
-### 77. [RoboMimic datasets](https://robomimic.github.io/)
-**🟢 Research dataset/tooling ecosystem**
-
-Demonstration datasets and reproducible imitation-learning pipelines.
-
-### 78. [MCAP](https://github.com/foxglove/mcap)
-**🟢 Open Source — data container format**
+### 2. [MCAP](https://github.com/foxglove/mcap) [![GitHub Stars](https://img.shields.io/github/stars/foxglove/mcap?style=social&color=white)](https://github.com/foxglove/mcap/stargazers)
 
 High-performance robotics data recording format increasingly used for sensor/telemetry and replay pipelines.
 
-### 79. [Foxglove SDK](https://github.com/foxglove/foxglove-sdk)
-**🟢 Open Source components**
+### 3. [Foxglove SDK](https://github.com/foxglove/foxglove-sdk) [![GitHub Stars](https://img.shields.io/github/stars/foxglove/foxglove-sdk?style=social&color=white)](https://github.com/foxglove/foxglove-sdk/stargazers)
 
 SDKs for integrating robotics telemetry and visualization into modern data workflows.
 
 ## Perception / 3D / Computer Vision
 
-### 80. [OpenCV](https://github.com/opencv/opencv)
-**🟢 Open Source**
+### 1. [OpenCV](https://github.com/opencv/opencv) [![GitHub Stars](https://img.shields.io/github/stars/opencv/opencv?style=social&color=white)](https://github.com/opencv/opencv/stargazers)
 
 The foundational computer-vision library used throughout robotics perception stacks.
 
-### 81. [Open3D](https://github.com/isl-org/Open3D)
-**🟢 Open Source**
-
-3D data processing, registration, reconstruction and visualization.
-
-### 82. [PCL — Point Cloud Library](https://github.com/PointCloudLibrary/pcl)
-**🟢 Open Source**
-
-Major open-source point-cloud processing ecosystem.
-
-### 83. [OpenVINO](https://github.com/openvinotoolkit/openvino)
-**🟢 Open Source**
-
-Model optimization and inference toolkit particularly useful for Intel edge deployments.
-
-### 84. [ONNX Runtime](https://github.com/microsoft/onnxruntime)
-**🟢 Open Source**
-
-Cross-platform neural-network inference engine useful for deploying Physical AI models.
-
-### 85. [TensorRT](https://github.com/NVIDIA/TensorRT)
-**🟡 Open components / NVIDIA licensing**
-
-GPU inference optimization stack widely used for low-latency robotics workloads.
-
-### 86. [Ultralytics](https://github.com/ultralytics/ultralytics)
-**🟡 Open source with commercial-license considerations**
-
-Popular YOLO family implementation for real-time detection and vision workloads. Check current licensing before commercial redistribution.
-
-### 87. [Segment Anything](https://github.com/facebookresearch/segment-anything)
-**🟢 Open research code**
+### 2. [Segment Anything](https://github.com/facebookresearch/segment-anything) [![GitHub Stars](https://img.shields.io/github/stars/facebookresearch/segment-anything?style=social&color=white)](https://github.com/facebookresearch/segment-anything/stargazers)
 
 General segmentation model that is useful as a perception building block in robot-vision systems.
 
-### 88. [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO)
-**🔵 Open research code**
+### 3. [Ultralytics](https://github.com/ultralytics/ultralytics) [![GitHub Stars](https://img.shields.io/github/stars/ultralytics/ultralytics?style=social&color=white)](https://github.com/ultralytics/ultralytics/stargazers)
 
-Open-vocabulary detection useful for language-conditioned object grounding.
+Popular YOLO family implementation for real-time detection and vision workloads. Check current licensing before commercial redistribution.
 
-### 89. [SAM 2](https://github.com/facebookresearch/sam2)
-**🟢 Open research code**
+### 4. [SAM 2](https://github.com/facebookresearch/sam2) [![GitHub Stars](https://img.shields.io/github/stars/facebookresearch/sam2?style=social&color=white)](https://github.com/facebookresearch/sam2/stargazers)
 
 Video/image segmentation foundation model useful for tracking objects through manipulation scenes.
 
+### 5. [ONNX Runtime](https://github.com/microsoft/onnxruntime) [![GitHub Stars](https://img.shields.io/github/stars/microsoft/onnxruntime?style=social&color=white)](https://github.com/microsoft/onnxruntime/stargazers)
+
+Cross-platform neural-network inference engine useful for deploying Physical AI models.
+
+### 6. [Open3D](https://github.com/isl-org/Open3D) [![GitHub Stars](https://img.shields.io/github/stars/isl-org/Open3D?style=social&color=white)](https://github.com/isl-org/Open3D/stargazers)
+
+3D data processing, registration, reconstruction and visualization.
+
+### 7. [TensorRT](https://github.com/NVIDIA/TensorRT) [![GitHub Stars](https://img.shields.io/github/stars/NVIDIA/TensorRT?style=social&color=white)](https://github.com/NVIDIA/TensorRT/stargazers)
+
+GPU inference optimization stack widely used for low-latency robotics workloads.
+
+### 8. [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO) [![GitHub Stars](https://img.shields.io/github/stars/IDEA-Research/GroundingDINO?style=social&color=white)](https://github.com/IDEA-Research/GroundingDINO/stargazers)
+
+Open-vocabulary detection useful for language-conditioned object grounding.
+
+### 9. [PCL — Point Cloud Library](https://github.com/PointCloudLibrary/pcl) [![GitHub Stars](https://img.shields.io/github/stars/PointCloudLibrary/pcl?style=social&color=white)](https://github.com/PointCloudLibrary/pcl/stargazers)
+
+Major open-source point-cloud processing ecosystem.
+
+### 10. [OpenVINO](https://github.com/openvinotoolkit/openvino) [![GitHub Stars](https://img.shields.io/github/stars/openvinotoolkit/openvino?style=social&color=white)](https://github.com/openvinotoolkit/openvino/stargazers)
+
+Model optimization and inference toolkit particularly useful for Intel edge deployments.
+
 ## Optimization / Math / Scientific Computing
 
-### 90. [Google OR-Tools](https://github.com/google/or-tools)
-**🟢 Open Source**
-
-Constraint programming, routing, linear/mixed-integer optimization and scheduling.
-
-### 91. [CVXPY](https://github.com/cvxpy/cvxpy)
-**🟢 Open Source**
-
-Python modeling framework for convex optimization; useful for planning and control.
-
-### 92. [Pyomo](https://github.com/Pyomo/pyomo)
-**🟢 Open Source**
-
-Optimization modeling framework for large-scale engineering and operations research.
-
-### 93. [Eigen](https://gitlab.com/libeigen/eigen)
-**🟢 Open Source**
-
-Core C++ linear algebra package used throughout robotics.
-
-### 94. [NumPy](https://github.com/numpy/numpy)
-**🟢 Open Source**
+### 1. [NumPy](https://github.com/numpy/numpy) [![GitHub Stars](https://img.shields.io/github/stars/numpy/numpy?style=social&color=white)](https://github.com/numpy/numpy/stargazers)
 
 Numerical foundation for Python robotics/AI stacks.
 
-### 95. [SciPy](https://github.com/scipy/scipy)
-**🟢 Open Source**
+### 2. [SciPy](https://github.com/scipy/scipy) [![GitHub Stars](https://img.shields.io/github/stars/scipy/scipy?style=social&color=white)](https://github.com/scipy/scipy/stargazers)
 
 Scientific computing tools including optimization, interpolation, spatial algorithms and signal processing.
 
+### 3. [Google OR-Tools](https://github.com/google/or-tools) [![GitHub Stars](https://img.shields.io/github/stars/google/or-tools?style=social&color=white)](https://github.com/google/or-tools/stargazers)
+
+Constraint programming, routing, linear/mixed-integer optimization and scheduling.
+
+### 4. [CVXPY](https://github.com/cvxpy/cvxpy) [![GitHub Stars](https://img.shields.io/github/stars/cvxpy/cvxpy?style=social&color=white)](https://github.com/cvxpy/cvxpy/stargazers)
+
+Python modeling framework for convex optimization; useful for planning and control.
+
+### 5. [Pyomo](https://github.com/Pyomo/pyomo) [![GitHub Stars](https://img.shields.io/github/stars/Pyomo/pyomo?style=social&color=white)](https://github.com/Pyomo/pyomo/stargazers)
+
+Optimization modeling framework for large-scale engineering and operations research.
+
 ## Edge / Deployment / Robotics DevOps
 
-### 96. [NVIDIA Isaac ROS](https://github.com/NVIDIA-ISAAC-ROS)
-**🟡 Open components / NVIDIA license**
-
-GPU-accelerated ROS 2 packages for perception, navigation, manipulation and AI inference at the edge.
-
-### 97. [NVIDIA Jetson software ecosystem](https://developer.nvidia.com/embedded/jetson-modules)
-**🟡 Mixed open/proprietary**
-
-The dominant edge-compute ecosystem for running modern Physical AI models on robots.
-
-### 98. [K3s](https://github.com/k3s-io/k3s)
-**🟢 Open Source**
-
-Lightweight Kubernetes distribution useful for managing distributed edge compute fleets.
-
-### 99. [Docker](https://github.com/moby/moby)
-**🟢 Open Source**
+### 1. [Docker](https://github.com/moby/moby) [![GitHub Stars](https://img.shields.io/github/stars/moby/moby?style=social&color=white)](https://github.com/moby/moby/stargazers)
 
 Containerization foundation for reproducible robotics deployments and simulation environments.
 
-### 100. [Tailscale](https://github.com/tailscale/tailscale)
-**🟢 Open Source client / commercial service**
+### 2. [K3s](https://github.com/k3s-io/k3s) [![GitHub Stars](https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white)](https://github.com/k3s-io/k3s/stargazers)
+
+Lightweight Kubernetes distribution useful for managing distributed edge compute fleets.
+
+### 3. [Tailscale](https://github.com/tailscale/tailscale) [![GitHub Stars](https://img.shields.io/github/stars/tailscale/tailscale?style=social&color=white)](https://github.com/tailscale/tailscale/stargazers)
 
 Secure networking useful for remote robot access and fleet operations; the hosted control plane is commercial.
 
-# 🧠 Open Models / Open Weights
+### 4. [NVIDIA Isaac ROS](https://github.com/NVIDIA-ISAAC-ROS) [![GitHub Stars](https://img.shields.io/github/stars/NVIDIA-ISAAC-ROS/NVIDIA-ISAAC-ROS?style=social&color=white)](https://github.com/NVIDIA-ISAAC-ROS/NVIDIA-ISAAC-ROS/stargazers)
+
+GPU-accelerated ROS 2 packages for perception, navigation, manipulation and AI inference at the edge.# 🧠 Open Models / Open Weights
 
 This section deliberately sits **outside** the strict Open Source list because model licenses and training-data rights differ materially from ordinary software licensing.
 
