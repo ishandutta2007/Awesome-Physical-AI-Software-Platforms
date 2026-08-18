@@ -124,66 +124,66 @@ Commercial platforms are grouped separately from the open-source ecosystem. Ente
 
 ## Robot Development & Automation Platforms
 
-| Platform | Primary focus | Typical users | Open-source relationship |
-|---|---|---|---|
-| [Intrinsic](https://www.intrinsic.ai/) | AI-enabled industrial robotics development, simulation, perception, motion planning and deployment | Manufacturers, automation companies, robotics developers | Strong ROS/open-source ecosystem integration; commercial platform |
-| [Mujin](https://mujin-corp.com/) | Intelligent robot control, motion planning and machine-vision driven automation | Logistics, manufacturing, palletizing, depalletizing | Proprietary platform; integrates with robot OEMs and industrial systems |
-| [PickNik / MoveIt Studio](https://picknik.ai/) | Advanced manipulation development, motion planning and deployment | Robotics companies, labs, industrial automation | Built heavily around MoveIt and ROS 2; commercial tooling around open foundations |
-| [Wandelbots NOVA](https://www.wandelbots.com/) | Robot programming and no-code/low-code automation | Manufacturing, system integrators | Commercial platform; supports multiple robot brands |
-| [Vention](https://vention.io/) | Cloud manufacturing and robotic workcell design | Automation engineers, manufacturers | Cloud-native design tooling; commercial |
-| [READY Robotics](https://ready-robotics.com/) | Hardware-agnostic robot programming / orchestration | Manufacturers, integrators | Proprietary commercial stack |
-| [Rapyuta Robotics / Rapyuta.io](https://www.rapyuta-robotics.com/) | Cloud robotics, orchestration and fleet applications | Warehouses, logistics and industrial robotics | Commercial cloud platform with ROS-centric roots |
-| [Intrinsic Flowstate](https://www.intrinsic.ai/flowstate) | Web-based digital-twin development and robotic application lifecycle | Industrial automation developers | Commercial, interoperable platform |
-| [RoboDK](https://robodk.com/) | Robot simulation and offline programming | Industrial robotics integrators | Commercial cross-OEM ecosystem |
-| [Octopuz](https://octopuz.com/) | Offline programming and simulation | Industrial robot programmers | Commercial |
-| [Robotmaster](https://www.robotmaster.com/) | Offline programming, path planning and manufacturing robotics | Welding, machining, industrial automation | Commercial |
-| [drag&bot](https://www.dragandbot.com/) | Low-code industrial robot programming | SMEs, factories, integrators | Commercial |
-| [Rocketfarm](https://rocketfarm.no/) | Robot programming and palletizing software | Logistics/manufacturing | Commercial |
+| Platform | Primary focus | Pricing (starting tier) | Free tier / trial | Company size (valuation / funding) |
+|---|---|---|---|---|
+| [Intrinsic](https://www.intrinsic.ai/) | AI-enabled industrial robotics development, simulation, perception, motion planning and deployment | Custom enterprise pricing (sales-led) | Free developer program access | Part of Alphabet ($2.2T market cap); folded into Google Feb 2026 |
+| [Mujin](https://mujin-corp.com/) | Intelligent robot control, motion planning and machine-vision driven automation | Subscription model (quote-based); $233M Series D Dec 2025 | Demo/evaluation available on request | $1B valuation; $411M total raised |
+| [Vention](https://vention.io/) | Cloud manufacturing and robotic workcell design | Subscription tiers from $49/mo (Design); enterprise plans available | Free account with limited features; free design tools | $1.2B valuation; $263M total raised; $60M ARR |
+| [Wandelbots NOVA](https://www.wandelbots.com/) | Robot programming and no-code/low-code automation | Enterprise pricing (quote-based); $120M raised 2025 | Free developer access and NOVA Cloud beta | ~$300M+ valuation; $123M total raised |
+| [RoboDK](https://robodk.com/) | Robot simulation and offline programming | $3,995 (Professional, permanent license) | 30-day free trial with all features; free version limited to 50 lines of code | Private; profitable, bootstrapped |
+| [READY Robotics](https://ready-robotics.com/) | Hardware-agnostic robot programming / orchestration | From ~$10,000/yr (RaaS model); acquired by Standard Bots | Free READY Academy training (40+ hrs) | Acquired by Standard Bots ($1B valuation) |
+| [PickNik / MoveIt Studio](https://picknik.ai/) | Advanced manipulation development, motion planning and deployment | From $80,000/yr (MoveIt Pro license) | Free trial available; MoveIt open-source core free | $7M total raised; small startup |
+| [Rapyuta Robotics / Rapyuta.io](https://www.rapyuta-robotics.com/) | Cloud robotics, orchestration and fleet applications | Subscription-based (quote); zero upfront option | ROI guarantee program; evaluation available | $81M total raised |
+| [Intrinsic Flowstate](https://www.intrinsic.ai/flowstate) | Web-based digital-twin development and robotic application lifecycle | Custom enterprise pricing | Free developer sandbox | Part of Alphabet ($2.2T market cap) |
+| [Octopuz](https://octopuz.com/) | Offline programming and simulation | Quote-based licensing | Demo available on request | Private; small company |
+| [Robotmaster](https://www.robotmaster.com/) | Offline programming, path planning and manufacturing robotics | Quote-based licensing | Free demo available | Private; small company |
+| [drag&bot](https://www.dragandbot.com/) | Low-code industrial robot programming | Quote-based (KEBA subsidiary) | Free demo available | Subsidiary of KEBA Group |
+| [Rocketfarm](https://rocketfarm.no/) | Robot programming and palletizing software | Quote-based licensing | Demo available on request | Private; small company |
 
 ## Fleet Management & Robot Cloud
 
-| Platform | Primary focus | Key capabilities |
-|---|---|---|
-| [Viam](https://www.viam.com/) | Hardware-agnostic robotics platform | Device abstraction, deployment, telemetry, ML/AI, fleet management, OTA and APIs |
-| [Formant](https://www.formant.io/) | Robot fleet cloud / observability | Fleet monitoring, remote operations, data streams, configuration, teleoperation and analytics |
-| [InOrbit](https://www.inorbit.ai/) | Robot operations platform | Fleet orchestration, observability, mission management, analytics and interoperability |
-| [Freedom Robotics](https://freedomrobotics.com/) | Cloud infrastructure for robots | Fleet management, observability, deployment, data and remote support |
-| [Foxglove](https://foxglove.dev/) | Robotics visualization and observability | ROS bags, MCAP, telemetry, 3D visualization, debugging and data review |
-| [Sereact](https://sereact.ai/) | Vision-language-action robotics software | Perception, reasoning and task execution for warehouse robots |
-| [Dexory](https://www.dexory.com/) | Autonomous warehouse intelligence | Robot-generated inventory data, analytics and digital warehouse visibility |
-| [Cogniteam](https://www.cogniteam.com/) | Cloud robotics platform / orchestration | Multi-robot deployment, fleet management and autonomy |
-| [Robotnik cloud tools](https://robotnik.eu/) | Mobile robotics fleet tooling | Remote operation, monitoring and fleet control |
-| [Apera AI](https://apera.ai/) | 4D vision for industrial robotics | 3D/4D perception and robot guidance |
+| Platform | Primary focus | Pricing (starting tier) | Free tier / trial | Company size (valuation / funding) |
+|---|---|---|---|---|
+| [Viam](https://www.viam.com/) | Hardware-agnostic robotics platform | Usage-based; first $5/mo free, then pay-as-you-go | Free tier: $5/mo included free forever; $30K credits for startups | $117M total raised; Series C Mar 2025 |
+| [Formant](https://www.formant.io/) | Robot fleet cloud / observability | $50–$150/vehicle/month (industry benchmarks) | Free tier: 1 user, unlimited robots, unlimited data bandwidth | $45M total raised |
+| [InOrbit](https://www.inorbit.ai/) | Robot operations platform | Platform tier is free; enterprise plans quote-based | Free tier: unlimited robots, no credit card required | $12.8M total raised; Series A Sep 2025 |
+| [Freedom Robotics](https://freedomrobotics.com/) | Cloud infrastructure for robots | Sales-led pricing | Free tier available; paid plans sales-led | $8M total raised |
+| [Foxglove](https://foxglove.dev/) | Robotics visualization and observability | Pro plan from $20/mo; Enterprise custom | Free tier: 3 developer seats, 10 GB storage, unlimited panels | $55M total raised; Series B Nov 2025 |
+| [Sereact](https://sereact.ai/) | Vision-language-action robotics software | Enterprise pricing (sales-led); per-robot deployment | Demo/evaluation available | $1.35B valuation; $150M total raised |
+| [Dexory](https://www.dexory.com/) | Autonomous warehouse intelligence | Subscription-based (RaaS model); quote-based | Demo/evaluation available | $205M+ total raised; Series C Oct 2025 |
+| [Cogniteam](https://www.cogniteam.com/) | Cloud robotics platform / orchestration | Nimbus platform: quote-based | Free tier available for developers | $9.8M total raised |
+| [Robotnik cloud tools](https://robotnik.eu/) | Mobile robotics fleet tooling | Quote-based; hardware + software bundles | Demo available on request | Private; small company |
+| [Apera AI](https://apera.ai/) | 4D vision for industrial robotics | Vue software: quote-based licensing | Demo/evaluation available | Strategic investment from Zebra Technologies |
 
 ## Simulation / Digital Twin / Industrial AI Platforms
 
-| Platform | Focus | Notes |
-|---|---|---|
-| [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim) | Robotics simulation and synthetic data | GPU-accelerated Omniverse-based simulation; central commercial/academic robotics platform |
-| [NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/) | Industrial 3D/digital-twin platform | USD ecosystem, rendering, simulation and synthetic data |
-| [NVIDIA Isaac Lab](https://developer.nvidia.com/isaac/lab) | Robot learning at scale | GPU-parallel simulation and RL/IL training infrastructure |
-| [Siemens Xcelerator / Industrial Copilot](https://www.siemens.com/global/en/products/xcelerator.html) | Industrial engineering and AI | Digital twins, industrial automation and AI tooling |
-| [Dassault Systèmes 3DEXPERIENCE](https://www.3ds.com/3dexperience) | Industrial digital twins / engineering | Simulation, manufacturing and product lifecycle |
-| [AWS RoboMaker](https://aws.amazon.com/robomaker/) | Cloud robotics development services | Simulation, deployment and ROS tooling on AWS |
-| [Google Cloud Robotics / Vertex AI](https://cloud.google.com/) | Cloud AI infrastructure for robotics | Model training, data, deployment and Gemini/agent tooling; robotics support varies by product |
-| [Azure AI + Physical AI Toolchain](https://github.com/microsoft/physical-ai-toolchain) | Cloud-to-robot development | Open-source toolchain combining Azure services with robotics workflows |
-| [Ansys](https://www.ansys.com/) | Physics, simulation and digital engineering | High-fidelity multiphysics and industrial simulation |
-| [Altair](https://altair.com/) | Simulation / optimization | Engineering simulation and AI-assisted design |
+| Platform | Focus | Pricing (starting tier) | Free tier / trial | Company size (valuation / revenue) |
+|---|---|---|---|---|
+| [NVIDIA Isaac Sim](https://developer.nvidia.com/isaac/sim) | Robotics simulation and synthetic data | Free for development; Omniverse Enterprise ~$4,500/GPU/year for production | Free developer license (non-production); Apache 2.0 open source | NVIDIA: $215.9B revenue (FY2026); $3.4T market cap |
+| [NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/) | Industrial 3D/digital-twin platform | Free tier; Enterprise from $4,500/GPU/year | Free individual tier with limited rendering | NVIDIA: $215.9B revenue (FY2026); $3.4T market cap |
+| [NVIDIA Isaac Lab](https://developer.nvidia.com/isaac/lab) | Robot learning at scale | Free (open source / source available) | Free; open-source components | NVIDIA: $215.9B revenue (FY2026); $3.4T market cap |
+| [Siemens Xcelerator / Industrial Copilot](https://www.siemens.com/global/en/products/xcelerator.html) | Industrial engineering and AI | Custom enterprise pricing | Free developer access to Xcelerator marketplace | Siemens: €19.4B quarterly revenue; ~$130B market cap |
+| [Dassault Systèmes 3DEXPERIENCE](https://www.3ds.com/3dexperience) | Industrial digital twins / engineering | Custom enterprise pricing (quote-based) | 30-day free trial available | €6.24B revenue (2025); ~$55B market cap |
+| [AWS RoboMaker](https://aws.amazon.com/robomaker/) | Cloud robotics development services | Pay-as-you-go (simulation SU-hours) | Free tier: first 25 SU-hours/month (discontinued Sep 2025) | Part of Amazon: $580B+ revenue; $2T+ market cap |
+| [Google Cloud Robotics / Vertex AI](https://cloud.google.com/) | Cloud AI infrastructure for robotics | Pay-as-you-go (GCP pricing) | Free tier: $300 credits for new accounts | Part of Alphabet: $350B+ revenue; $2.2T market cap |
+| [Azure AI + Physical AI Toolchain](https://github.com/microsoft/physical-ai-toolchain) | Cloud-to-robot development | Pay-as-you-go (Azure pricing) | Free tier: $200 Azure credits | Part of Microsoft: $245B+ revenue; $3.1T market cap |
+| [Ansys](https://www.ansys.com/) | Physics, simulation and digital engineering | Custom enterprise pricing | Free student/academic licenses; eval available | Acquired by Synopsys for $35B (2025) |
+| [Altair](https://altair.com/) | Simulation / optimization | Custom enterprise pricing | Free Altair University access; eval available | Acquired by Siemens for $10.6B (2025) |
 
 ## Commercial AI / Foundation-Model Platforms
 
-| Company / platform | Physical AI focus | Position in stack |
-|---|---|---|
-| [NVIDIA Robotics / Isaac](https://www.nvidia.com/en-us/industries/robotics/) | Isaac, GR00T, Cosmos, simulation, inference and accelerated libraries | Full-stack AI + simulation + edge compute |
-| [Skild AI](https://www.skild.ai/) | General-purpose omni-bodied robot brain | Foundation-model / policy layer |
-| [Physical Intelligence](https://www.physicalintelligence.company/) | General robot intelligence and π-series models | VLA / general-purpose robot policies |
-| [Covariant](https://covariant.ai/) | AI for industrial robot manipulation | Warehouse/factory robot intelligence |
-| [FieldAI](https://www.fieldai.com/) | Generalized robot autonomy for unstructured environments | Inspection, industrial and outdoor autonomy |
-| [Generalist AI](https://www.generalistai.com/) | General robot intelligence | Physical AI foundation models / autonomy |
-| [World Labs](https://www.worldlabs.ai/) | Spatial/world models | 3D world intelligence usable for embodied AI workflows |
-| [Figure AI](https://www.figure.ai/) | Humanoid intelligence and robot foundation models | Integrated robot + AI stack |
-| [Apptronik](https://apptronik.com/) | Humanoid robotics / Apollo ecosystem | Hardware plus AI-software stack |
-| [Agility Robotics](https://www.agilityrobotics.com/) | Digit humanoid autonomy | Hardware + autonomy software |
+| Company / platform | Physical AI focus | Pricing (starting tier) | Free tier / trial | Company size (valuation / revenue) |
+|---|---|---|---|---|
+| [NVIDIA Robotics / Isaac](https://www.nvidia.com/en-us/industries/robotics/) | Isaac, GR00T, Cosmos, simulation, inference and accelerated libraries | Free developer tools; enterprise licensing for production | Free developer license; open-source components | $215.9B revenue (FY2026); $3.4T market cap |
+| [Figure AI](https://www.figure.ai/) | Humanoid intelligence and robot foundation models | RaaS model (per-robot deployment) | N/A (hardware company) | $39B valuation; $1B+ raised (Series C Sep 2025) |
+| [Skild AI](https://www.skild.ai/) | General-purpose omni-bodied robot brain | Usage-based licensing (sales-led) | N/A (enterprise AI platform) | $14B valuation; $2.2B total raised; $30M revenue |
+| [Physical Intelligence](https://www.physicalintelligence.company/) | General robot intelligence and π-series models | Enterprise licensing (sales-led) | Open-weight models available (π₀, π₀-FAST) | $5.6B valuation (talks at $11B); $1.07B raised |
+| [World Labs](https://www.worldlabs.ai/) | Spatial/world models | Enterprise licensing (sales-led) | Research demos available | ~$5B valuation; $1B raised (Feb 2026) |
+| [Apptronik](https://apptronik.com/) | Humanoid robotics / Apollo ecosystem | RaaS model (per-robot deployment) | N/A (hardware company) | $5.5B valuation; $935M total raised |
+| [Covariant](https://covariant.ai/) | AI for industrial robot manipulation | Acquired by Amazon (Sep 2024); licensing model | N/A (acquired) | Acquired by Amazon for ~$400M; previously $625M valuation |
+| [Agility Robotics](https://www.agilityrobotics.com/) | Digit humanoid autonomy | RaaS model ($25K+/unit or RaaS contract) | N/A (hardware company) | $2.1B valuation; $641M raised; SPAC planned |
+| [FieldAI](https://www.fieldai.com/) | Generalized robot autonomy for unstructured environments | Enterprise licensing (sales-led) | N/A (enterprise platform) | $2B valuation; $405M total raised |
+| [Generalist AI](https://www.generalistai.com/) | General robot intelligence | Enterprise licensing (sales-led) | N/A (enterprise platform) | $2B valuation; $400M raised (Jun 2026) |
 
 > **Important:** many “platform companies” in Physical AI are not pure SaaS businesses. They sell a combination of software, robot hardware, deployment services and long-term support. They are included because their software layer is strategically important to Physical AI.
 
